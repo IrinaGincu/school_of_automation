@@ -2,6 +2,7 @@ package com.java.endava;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class ComparableDemo {
 
@@ -11,12 +12,12 @@ public class ComparableDemo {
         employees.add(new Employee("Tatiana", 18, "Tester"));
         employees.add(new Employee("Natalia", 21, "Tester"));
 
-        Collections.sort(employees);
-        System.out.println(employees);
 
-        Collections.sort(employees, Collections.reverseOrder());
-        System.out.println(employees);
-
-
+////        Collections.sort(employees);
+////        System.out.println(employees);
+////
+////        Collections.sort(employees, Collections.reverseOrder());
+////        System.out.println(employees);
+//    }
     }
 }
