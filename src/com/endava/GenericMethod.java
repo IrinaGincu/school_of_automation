@@ -11,7 +11,7 @@ public class GenericMethod {
         }
     }
 
-    public static <E extends Comparable<E>> E seeMaximum(E x, E y, E z){
+    public static <E extends Number & Comparable<E>> double seeMaximum(E x, E y, E z){
         E max= x;
         if(y.compareTo(max) > 0){
             max = y;
@@ -20,7 +20,7 @@ public class GenericMethod {
         if(z.compareTo(max) > 0){
             max = z;
         }
-        return max;
+        return max.doubleValue() * 3;
     }
 
     public static <E extends GenericsActions> void getNewSize() {
@@ -43,6 +43,6 @@ public class GenericMethod {
         getNewSize();
         System.out.println(seeMaximum(6,8,9));
         System.out.println(seeMaximum(6.6,8.8,9.2));
-        System.out.println(seeMaximum("peer", "apple", "cherry"));
+//        System.out.println(seeMaximum("peer", "apple", "cherry"));
     }
 }
